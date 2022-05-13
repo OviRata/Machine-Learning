@@ -7,7 +7,7 @@ def euclidean_distance(point_a, point_b):
     return distance
 
 
-#Complexity of the knn_array algorithm: O( (n^2)log(n) )
+#Complexity of the knn_array algorithm: O( n*d+n*log(n) ) per query point
 def knn_array(X_test, X_train, Y_train, k):
   y_hat=[]
   
