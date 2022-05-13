@@ -8,7 +8,7 @@ def euclidean_distance(point_a, point_b):
     distance = np.linalg.norm(point_a - point_b)
     return distance
 
-#Complexity of the knn_heap algorithm: O( n*d+(n)*log(k) ) per query point
+#Complexity of the knn_heap algorithm: O( n*d+n*log(k) ) per query point
 def k_nn_heap(X_test, X_train, Y_train, k):
   y_hat=[]
   
